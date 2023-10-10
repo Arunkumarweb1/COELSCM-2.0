@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/menu"> 
+          <style>
+                  body {margin:0;font-family:Arial}
+
+                    .topnav {
+                      overflow: hidden;
+                      background-color: #5C5597;/* menu bg color akp*/
+                    }
+
+                    .topnav a {
+                      float: left;
+                      display: block;
+                      color: #f2f2f2;
+                      text-align: center;
+                      padding: 14px 16px;
+                      text-decoration: none;
+                      font-size: 17px;
+                    }
+
+                    .active {
+                      background-color: #D1947F; /* home active color */
+                      color: white;
+                    }
+
+                    .topnav .icon {
+                      display: none;
+                    }
+
+                    .dropdown {
+                      float: left;
+                      overflow: hidden;
+                    }
+
+                    .dropdown .dropbtn {
+                      font-size: 17px;    
+                      border: none;
+                      outline: none;
+                      color: white;
+                      padding: 14px 16px;
+                      background-color: inherit;
+                      font-family: inherit;
+                      margin: 0;
+                    }
+
+                    .dropdown-content {
+                      display: none;
+                      position: absolute;
+                      background-color: #f9f9f9;
+                      min-width: 160px;
+                      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                      z-index: 1;
+                    }
+
+                    .dropdown-content a {
+                      float: none;
+                      color: black; /*drop down menu text color akp*/
+                      padding: 12px 16px;
+                      text-decoration: none;
+                      display: block;
+                      text-align: left;
+                    }
+
+                    .topnav a:hover, .dropdown:hover .dropbtn {
+                      background-color: #D1947F; /* over menu color akp*/
+                      color: white;
+                    }
+
+                    .dropdown-content a:hover {
+                      background-color: #ddd;
+                      color: black;
+                    }
+
+                    .dropdown:hover .dropdown-content {
+                      display: block;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                      .topnav a:not(:first-child), .dropdown .dropbtn {
+                        display: none;
+                      }
+                      .topnav a.icon {
+                        float: right;
+                        display: block;
+                      }
+                    }
+
+                    @media screen and (max-width: 600px) {
+                      .topnav.responsive {position: relative;}
+                      .topnav.responsive .icon {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                      }
+                      .topnav.responsive a {
+                        float: none;
+                        display: block;
+                        text-align: left;
+                      }
+                      .topnav.responsive .dropdown {float: none;}
+                      .topnav.responsive .dropdown-content {position: relative;}
+                      .topnav.responsive .dropdown .dropbtn {
+                        display: block;
+                        width: 100%;
+                        text-align: left;
+                      }
+                    }
+
+.column8 {
+                                float: left;
+                                width: 50%;   50
+                                margin-bottom: 16px;
+                                padding: 20px;     60
+                              }
+
+.column7 {
+                                float: left;
+                                width: 14%;   7
+                                margin-bottom: 16px;
+                                padding: 20px;     60
+                              }
+
+
+
+                      .column6 {
+                                float: left;
+                                width: 25%;   4
+                                margin-bottom: 16px;
+                                padding: 20px;     60
+                              }
+                              .column0 {
+                                float: left;
+                                width: 20%; 5
+                                margin-bottom: 16px;
+                                padding: 10px;
+                              }
+
+
+                              
+                              .column2 {
+                                float: center;
+                                width: 50%;
+                                margin-bottom: 16px;
+                                padding: 0 8px;
+                              }
+
+                              .column4 {
+                                float: left;
+                                width: 25%;
+                                margin-bottom: 16px;
+                                padding: 20px;
+                              }
+                              .column5 {
+                                float: left;
+                                width: 20%;
+                                margin-bottom: 16px;
+                                padding: 10px;
+                              }
+                            
+                              @media screen and (max-width: 650px) {
+                                .column {
+                                  width: 100%;
+                                  display: block;
+                                }
+                                .column0 {
+                                  width: 100%;
+                                  display: block;
+                                }
+                                .column1 {
+                                  width: 100%;
+                                  display: block;
+                                }
+                                .column2 {
+                                  width: 100%;
+                                  display: block;
+                                }
+                                .column4 {
+                                  width: 100%;
+                                  display: block;
+                                }
+                               .column6 {
+                                  width: 100%;
+                                  display: block;
+                                }
+
+
+
+.column8 {
+                                  width: 50%;
+                                  display: block;
+                                }
+
+
+ .column7 {
+                                  width: 100%;
+                                  display: block;
+                                }
+
+
+                      /*following card for people card*/
+                              .card {
+                                box-shadow: 0 px 0px 0 rgba(0, 0, 0, 0.2); 
+                              }
+
+                               .container {
+                                padding: 0 1px;
+                              } 
+
+                              .container::after, .row::after {
+                                content: "";
+                                clear: both;
+                                display: table;
+                              }
+
+                                .title {
+                              color: weight;
+                              }
+
+                              .button {
+                                border: none;
+                                outline: 0;
+                                display: inline-block;
+                                padding: 8px;
+                                color: white;
+                                background-color: #000;
+                                text-align: center;
+                                cursor: pointer;
+                                width: 100%;
+                              }
+
+                              .button:hover {
+                                background-color: #555;
+                              }
+                              p.ex2 {
+                              border: 1px ; 
+                                padding-top: 100px;
+                              }
+
+
+
+
+
+
+
+
+
+
+/*header
+
+*/
+                              .header1 {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </style>
+        </head>
+        <body>
+  
+            <img src="images/demo/logo.png" style="width:490px;height:100px;float:left" /> <br><br><br><br><br><br>
+<!--
+<ul>
+                  <li>placement@nitc.ac.in  hcbdhjdhjdhdhedhdhedhdihdwidhiw</li>
+                                    </ul>--></div>
+                  
+                </ul>
+                <div class="topnav" id="myTopnav">
+                  <a href="#home" class="active">Home</a>
+                  <div class="dropdown">
+                    <button class="dropbtn">Centre overview</a>
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#ac">About the Centre</a>
+                      <a href="#Centeroverview">Mission</a>
+                      <a href="#vision">Vision</a>
+                      <a href="#objectives">Objectives</a>
+                    </div>
+                  </div> 
+                  <div class="dropdown">
+
+                    <button class="dropbtn">Members of the Centre</a>
+                       <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#patron">Patron and Vice-Patron</a>
+                      <a href="#cp">Chairperson</a>
+                      <a href="#members">Members</a>
+                      <a href="#cab">Centre Advisory Board</a>
+                    </div>
+                  </div> 
+
+
+                     
+                    
+                  <div class="dropdown">
+                    <button class="dropbtn">Courses offered by the Centre</a>
+                       <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="pdf/Syllabus_Courses_CoELSCM NITC.pdf">Syllabus for the courses</a>
+                      <a href="index.html#coc">Courses available for B.Tech Students at NITC<!--<br> during Winter Semester 2022-23--></a>
+                      <a href="index.html#coc"> Online Certification Course</a>
+                      <a href="index.html#ci">Online Certification Course Instructors
+                    </a>
+                       
+                    </div>
+                  </div> 
+
+
+
+
+
+
+
+                  <!-- <a href="#home">Activities</a>-->
+                     
+                    
+                  <div class="dropdown">
+                    <button class="dropbtn">Events</a>
+                       <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#ue">Upcoming Events</a>
+                      <a href="pdf\PRAGATI.pdf">Student Internship Programme <br>PRAGATI</a>
+                      <a href="#eoc">Events organized by the Centre</a>
+                    <!--  <a href="#">Past-events</a>-->
+                    </div>
+                  </div> 
+                  <!-- <a href="#news">News feed</a>-->
+                   <!-- <a href="#about">Research Published by Members</a>-->
+                    <a href="#contact">Contact us</a>
+                  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+
+              
+                <center>
+
+                        <div class="slideshow-container">
+                       <div class="mySlides fade">
+                         <img src="images/bg/bb2.png" style="width:100%">
+                          <div class="text"><h4>    </h4></div>
+                        </div>
+
+ <div class="mySlides fade">
+                          <img src="images/bg/bb3.png" style="width:100%">
+                          <div class="text"><h4>    </h4></div>
+                        </div>
+                        <div class="mySlides fade">
+                          <img src="images/bg/bb4.png" style="width:100%">
+                          <div class="text"><h4> </h4></div></center>
+                        </div>
+                        <div class="mySlides fade">
+                          <img src="images/bg/bb5.png" style="width:100%">
+                          <div class="text"><h4>    </h4></div>
+                        </div>
+                        <div class="mySlides fade">
+                          <img src="images/bg/samarthpsd.png" style="width:100%">
+                          <div class="text"><h4>    </h4></div>
+                        </div>
+                        <div class="mySlides fade">
+                          <img src="images/bg/samarthteam.png" style="width:100%">
+                          <div class="text"><h4> </h4></div></center>
+                        </div>
+                       <!-- <div class="mySlides fade">
+                          <img src="images/bg/jaitra.png" style="width:100%">
+                          <div class="text"><h4>    </h4></div>
+                        </div>
+                        <div class="mySlides fade">
+                          <img src="images/bg/bb9.png" style="width:100%">
+                          <div class="text"><h4>  </h4></div>
+                        </div>
+                        </div>-->
+                      
+
+                        <div style="text-align:center">
+                         <!-- <span class="dot"></span> -->
+                          <span class="dot"></span> 
+                          <span class="dot"></span> 
+                          <span class="dot"></span>
+                          <span class="dot"></span> 
+                           <span class="dot"></span> 
+                            <span class="dot"></span> 
+                             <span class="dot"></span> 
+                          <!--<span class="dot"></span> 
+                          <span class="dot"></span>-->
+                        </div>
+                        <div>
+                          <div>
+                            
+                          </div>
+                        </div>
+
+                                <script>
+                              var slideIndex = 0;
+                              showSlides();
+
+                              function showSlides() {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("dot");
+                                for (i = 0; i < slides.length; i++) {
+                                  slides[i].style.display = "none";  
+                                }
+                                slideIndex++;
+                                if (slideIndex > slides.length) {slideIndex = 1}    
+                                for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";  
+                                dots[slideIndex-1].className += " active";
+                                setTimeout(showSlides, 5000); // Change image every 2 seconds
+                              }
+                              </script>
+
+
+
+
+
+
+
+
+
+
+                                        <style>
+                                        * {
+                                          box-sizing: border-box;
+                                        }
+
+                                        /* Create three equal columns that floats next to each other */
+                                        .column {
+                                          float: left;
+                                          width: 33.33%;
+                                          padding: 10px;
+                                          height: 310px; /* Should be removed. Only for demonstration */
+                                          overflow: scroll;
+                                        }
+                                         .column1 {
+                                          float: left;
+                                          width: 100%;
+                                          padding: 10px;
+                                          height: 310px; /* Should be removed. Only for demonstration */
+                                          overflow: scroll;
+                                        }
+
+                                        /* Clear floats after the columns */
+                                        .row:after {
+                                          content: "";
+                                          display: table;
+                                          clear: both;
+                                        }
+                                         .row1:after {
+                                          content: "";
+                                          display: table;
+                                          clear: both;
+                                        }
+
+                                        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+                                        @media screen and (max-width: 600px) {
+                                          .column {
+                                            width: 100%;
+                                          }
+                                        }
+                                        </style>
+                                        </head>
+                                        <body>  
+    
+   
+<div id="Centeroverview"> <br><br>
+                                        <center>  
+
+                                     <!--   <h2 style="color: #D1947F"><b>Centre Overview</h2></b></center></h2></center></div>-->
+                                        <div class="row1">
+                                          <div class="column1" style="background: linear-gradient(to bottom, #5c5597 0%, #d1947f 100%);" id="ac">
+                                         <center>   <h2 style="color:;">About the Centre</h2>
+                                            <p><b>National Institute of Technology Calicut</b> is partnering with NITIE Mumbai in the initiatives to support the PM Gati Shakti Scheme. As an ambitious initiative, NIT Calicut has launched a Centre of Excellence in Logistics and Supply Chain Management (CoELSCM) to contribute to the realization of the objectives of the PM Gati Shakti scheme. This Centre of Excellence is a multidisciplinary centre that works across various research groups such as Industrial Engineering, Transportation Engineering, Remote Sensing and Geospatial Technology, Construction Management and Cyber Security. Faculty members and their research team will be a part of this Centre. This team will focus on new and emerging technologies with multidisciplinary and translational research relevant to achieving PM Gati Shakti's objectives of improving the supply chain's operational efficiency and minimizing logistics costs. The Centre will initiate steps in disseminating advanced knowledge and promote Digitisation, Analytics, IoT applications, Artificial Intelligence and Machine Learning applications among the practicing professionals in the organizations involved in the logistics sector and will share the best practices. 
+
+</p></center>
+                                          </div></div><br>
+
+                                        <div class="row">
+                                          <div class="column" style="background: linear-gradient(to bottom, #5c5597 0%, #d1947f 100%);">
+                                            <h2>Mission</h2>
+                                            <p>Create an association between academia and industry to promote cutting-edge research,
+knowledge creation, ground breaking innovations and capacity-building programmes in the Indian
+logistics and supply chain sector in order to make it effective and efficient.
+</p>
+                                          </div>
+
+                                          <div class="column" style="background:linear-gradient(to top, #5c5597 0%, #d1947f 100%);" id="vision">
+                                            <h2>Vision</h2>
+                                            <p>To transform Indian logistics and supply chain sector to boost the Indian economys
+transformation into a global economic power.</p>
+                                          </div>
+                                          <div class="column" style="background:linear-gradient(to right, #5c5597 0%, #d1947f 100%);" id="objectives">
+                                            <h2>Objectives</h2>
+                                            <p><ul><li>Strengthen research in the area of logistics and supply chain sector focusing on capacity
+building to promote PM Gati Shakti Scheme.</li>
+<li>Enhance competitiveness of the Indian transportation and logistics industry</li>
+<li>Build a platform for knowledge creation and exchange in the logistics and supply chain
+domain.</li>
+<li>Establish research collaborations with professional bodies, academic institutions and
+industries for formulating innovative solutions in logistics and supply chain domain.</li></ul></p>
+                                          </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<div class="bgded overlay" style="background-image:url('images/demo/d7.png');"> -->
+
+                         <style>     .header1 {
+  padding: 5px;
+  text-align: center;
+  background:#D1947F;
+  color: white;
+  font-size: 10px;</style><body><br>
+        <div class="header1" id="team">
+
+
+
+<!--<div>
+      <h2 style="color: #"><b>Upcoming Events
+     </h2></b></center></h2></center></div>
+           
+
+  <embed src="pdf/flyer1.pdf" type="application/pdf" width="100%" height="800px" />
+
+        </p></p></p></p></p>
+-->
+
+
+
+
+  <h1>Members of the Centre</h1>
+ <!-- <p>My supercool header</p>-->
+</div>
+
+
+      <div>
+     
+<br>
+
+ <div class="column4">
+              <div class="card">
+                 <!-- <img src="images/demo/p2.png" alt="SD" style="width:100%">  -->
+                  <div class="container"><center>
+                    <b> <!--<p>Vice Patron</p>  -->
+                 <!--  <p><a style="text-decoration:none"  href="http://www.ece.nitc.ac.in/index.php?option=com_php&Itemid=66&uname=sathi">Dr. P. S. Sathidevi</a></p>
+                    <p>Deputy Director NITC</p>  -->
+                   
+              </div>
+              </div>
+            </div>
+
+
+
+         <div class="row" id="patron">
+            <div class="column4">
+              <div class="card">            
+                  <img src="images/demo/p1.png" alt="PK" style="width:100%">
+                  <div class="container"><center>
+                     <b><p text color="blue";>Patron</p>
+                    <p><a style="text-decoration:none"  href="http://www.old.nitc.ac.in/index.php/?url=users/view/611/0,40/2/0/%20Name/0/0/">Prof. Prasad Krishna</a></p>
+                    <p>Director NITC</p>
+                      
+                  </div>
+              </div>
+          </div>
+           
+                <div class="column4" id="cp">
+              <div class="card">
+                  <img src="images/demo/cp.png" alt="vvp" style="width:100%">
+                <div class="container"><center>
+                    <p>Chairperson</p>
+                  <p><a style="text-decoration:none"  href="http://www.old.nitc.ac.in/index.php/?url=users/view/273/0,12,25/2/39/%20Name/0/0/0">Dr. Vinay V. Panicker</a></p>
+                  <p>Associate Professor, Department of Mechanical Engineering</p>
+                
+                 </div>
+            </div></div>      
+
+
+ <div class="column4">
+              <div class="card">
+                 <!-- <img src="images/demo/p2.png" alt="SD" style="width:100%">  -->
+                  <div class="container"><center>
+                    <b> <!--<p>Vice Patron</p>  -->
+                 <!--  <p><a style="text-decoration:none"  href="http://www.ece.nitc.ac.in/index.php?option=com_php&Itemid=66&uname=sathi">Dr. P. S. Sathidevi</a></p>
+                    <p>Deputy Director NITC</p>  -->
+                   
+              </div>
+              </div>
+            </div>
+
+
+          </b></center></div>
+
+<div class="sectiontitle">
+              <p class="nospace font-xs"></p> <p class="ex2">
+                <center>
+                   <h2 style="color: #D1947F"><b>Members</h2></b></center></h2></center></div>
+            <!--  <p class="heading underline font-x2">Members</p></center>-->
+            </div>
+
+<div class="hoc container clear">
+          <div class="row">
+            <div class="column0" id="members">
+              <div class="card">
+                <img src="images/demo/rs.png" alt="aj" style="width:100%" height="50%">
+                <div class="container"><center>
+                  <p><a style="text-decoration:none"  href="http://old.nitc.ac.in/index.php/?url=users/view/196/12/3"><b>Dr. R. Sridharan</a></p>         <p>Professor (HAG), Department of Mechanical Engineering</p>    
+                  </div>
+              </div>
+          </div>
+            <div class="column0">
+              <div class="card"><img src="images/demo/mvlra.png" alt="ns" style="width:100%">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://old.nitc.ac.in/index.php/?url=users/view/73/7/3
+
+">Dr. M V L R Anjaneyulu</a></p> <p>Professor (HAG), Department of Civil Engineering</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column0">
+              <div class="card"><img src="images/demo/vmp.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="http://www.old.nitc.ac.in/index.php/?url=users/view/201/0,12,25/2/0/madhu/0/0/
+
+">Dr. V. Madhusudanan Pillai</a></p><p>Professor, Department of Mechanical Engineering</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column0">
+              <div class="card"><img src="images/demo/mhk.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://old.nitc.ac.in/index.php/?url=users/view/89/7/3
+
+">Dr. Harikrishna M. </a></p><p>Associate Professor, Department of Civil Engineering</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column0">
+              <div class="card"><img src="images/demo/gg.png" alt="gg" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://people.cse.nitc.ac.in/gopakumar/
+
+">Dr. Gopakumar G </a></p><p>Associate Professor, Department of Computer 
+Science and 
+Engineering</p>
+                  </div>
+              </div>
+            
+</center></div>
+
+
+
+<div class="hoc container clear">
+          <div class="row">
+            <div class="column0">
+              <div class="card">
+                <img src="images/demo/ss.png" alt="aj" style="width:100%">
+                <div class="container"><center>
+                  <p><a style="text-decoration:none"  href="http://www.old.nitc.ac.in/index.php/?url=users/view/559/0/2/0/Shama/0/0/
+
+">Cdr (Dr.) Shamasundara M S</a></p>  
+                <p>  Registrar NITC</p>         
+                  </div>
+              </div>
+          </div>
+            <div class="column0">
+              <div class="card"><img src="images/demo/bk.png" alt="Dr. Bimal P." style="width:100%">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://old.nitc.ac.in/index.php/?url=users/view/285/5/3
+
+">Dr. Bimal P. </a></p><p>Assistant Professor, Department of Architecture & planning</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column0">
+              <div class="card"><img src="images/demo/rkk.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="http://www.old.nitc.ac.in/index.php/?url=users/view/211/12/3">Dr. Ratna Kumar K.</a></p><p>Assistant Professor, Department of Mechanical 
+Engineering
+</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column0">
+              <div class="card"><img src="images/demo/dky.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://old.nitc.ac.in/index.php/?url=users/view/592/012/2/6/%20Name/5/0/0">Dr. Devendra Kumar Yadav</a></p><p>Assistant Professor, Department of Mechanical 
+Engineering
+</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column0"><center>
+              <div class="card"><img src="images/demo/hvn2.png" alt="Dr Hiran V. Nath" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://sites.google.com/site/hiranvnath/?pli=1
+
+">Dr Hiran V. Nath</a></p><p>Assistant Professor, Department of Computer 
+Science and 
+Engineering
+</p>
+                  </div>
+              </div>
+            
+</center></div>
+</div>
+
+
+
+<div class="hoc container clear">
+          <div class="row">
+            <div class="column0">
+              <div class="card">
+                <img src="images/demo/yvn.png" alt="aj" style="width:100%">
+                <div class="container"><center>
+                  <p><a style="text-decoration:none"  href="https://old.nitc.ac.in/index.php/?url=users/view/566/7/3
+
+">Dr.Yogeshwar Vijaykumar 
+Navandar</a></p>   <p>Assistant Professor, Department of Civil
+Engineering
+</p>        
+                  </div>
+              </div>
+          </div>
+            <div class="column0">
+              <div class="card"><img src="images/demo/jk.png" alt="ns" style="width:100%">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://old.nitc.ac.in/index.php/?url=users/view/577/7/3
+
+">Dr. Jayachandran K </a></p><p>Assistant Professor, Department of Civil
+Engineering
+</p>        
+                  </div>
+              </div>
+            </div>
+            <div class="column0">
+              <div class="card"><img src="images/demo/sk.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://old.nitc.ac.in/index.php/?url=users/view/617/5/3
+
+">Dr. Sanil Kumar</a></p><p>Assistant Professor, Department of Architecture & planning
+</p>        
+                  </div>
+              </div>
+            </div>
+            <div class="column0">
+              <div class="card"><img src="images/demo/av.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://old.nitc.ac.in/index.php/?url=users/view/538/7/3
+
+">Dr. Agilan. V. </a></p><p>Assistant Professor, Department of Civil
+Engineering
+</p>        
+                  </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="column0">
+              <div class="card"><img src="images/demo/hillol.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://nitc.ac.in/department/civil-engineering/faculty-and-staff/faculty/8a2412ac-c5f9-4a86-b2a4-f78e8144cfb4
+">Dr. Hillol Chakravarty </a></p><p>Assistant Professor, Department of Civil
+Engineering
+</p>        
+                  </div>
+              </div></center>
+            </div></div>
+
+<div class="hoc container clear">
+          <div class="row">
+<div class="column0">
+              <div class="card"><img src="images/demo/nishanth.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://nitc.ac.in/department/civil-engineering/faculty-and-staff/faculty/52ff84a4-cb58-47d2-aaf2-1c38d1df497c
+
+">Dr. Nishant Mukund Pawar</a></p><p>Assistant Professor, Department of Civil
+Engineering
+</p>        
+                  </div>
+              </div>
+            </div>
+            <div class="column0">
+              <div class="card"><img src="images/demo/sajan.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://nitc.ac.in/department/mechanical-engineering/faculty-and-staff/faculty/a57e3a8c-8f9a-41d3-8032-95ab8ff0dadc
+">Dr. Sajan T John</a></p><p>Assistant Professor, Department of Mechanical Engineering</p>        
+                  </div>
+              </div>
+            </div>
+            <div class="column0">
+              <div class="card"><img src="images/demo/saravana kumar.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://nitc.ac.in/schools/school-of-management-studies/faculty-and-staff/faculty/5d33b71c-8936-437b-b9ee-a295a583776b
+
+">Dr. S. Saravana Kumar</a></p><p>Assistant Professor, School of Management Studies
+</p>        
+                  </div>
+              </div>
+            </div>
+
+
+
+             <div class="column0">
+              <div class="card"><img src="images/demo/pmon.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://nitc.ac.in/department/mechanical-engineering/faculty-and-staff/faculty/971872a7-ef1a-426c-96fe-635fdd46ee3f
+
+">Dr. Pradeepmon T. G. </a></p><p>Assistant Professor, Department of Mechanical Engineering</p>        
+                  </div>
+              </div>
+            </div>
+
+
+
+
+             <div class="column0">
+              <div class="card"><img src="images/demo/sree.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://nitc.ac.in/schools/school-of-management-studies/faculty-and-staff/faculty/bb03c167-e2b9-4466-b827-210da8275be4
+">Dr. Sreekanth V. K. </a></p> <p>Assistant Professor, School of Management Studies
+</p>        
+                  </div>
+              </div></center>
+            </div>
+          
+
+<div class="hoc container clear">
+          <div class="row">
+ <div class="column0">
+              <div class="card"><img src="images/demo/munavar.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://nitc.ac.in/department/civil-engineering/faculty-and-staff/faculty/8ff967fc-9507-421f-ac23-907143cf0ad8
+
+">Dr. Munavar Fairooz C.</a></p><p>Assistant Professor, Department of Civil
+Engineering
+</p>        
+                  </div>
+              </div></center>
+            </div>
+
+<div class="column0">
+              <div class="card"><img src="images/demo/radha.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://nitc.ac.in/department/mechanical-engineering/faculty-and-staff/faculty/2c5ee255-0729-425b-a1be-990ade3db272
+
+">Dr. T. Radha Ramanan</a></p> <p>Professor, Department of Mechanical Engineering</p>        
+                  </div>
+              </div></center>
+            </div>
+
+
+
+            <div class="column0">
+              <div class="card"><img src="images/demo/reshmi.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://nitc.ac.in/department/civil-engineering/faculty-and-staff/faculty/565d9f61-5321-4b27-bbb6-a0ab213a7346
+
+">Dr. Resmi S.R. </a></p> <p>Assistant Professor, Department of Civil Engineering</p>        
+                  </div>
+              </div></center>
+            </div>
+
+           <div class="column0">
+              <div class="card"><img src="images/demo/nassr.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://nitc.ac.in/department/department-of-architecture-and-planning/faculty-and-staff/faculty/0f200800-e22b-472d-833f-3fab4ff8f738
+">Dr. Naseer M. A. </a></p> <p>Professor, Department of Architecture and Planning</p>        
+                  </div>
+              </div></center>
+            </div>
+
+
+             <div class="column0">
+              <div class="card"><img src="images/demo/chandra.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p><a style="text-decoration:none"  href="https://nitc.ac.in/multidiscilplinary-centres/centre-for-international-relations-amp-foreign-languages/faculty-and-staff/faculty/6dcec0d5-4047-4134-a706-1553d67a99ac
+">Dr. Chandra Shekar Bestha</a></p> <p>Assistant Professor, Department of Chemical Engineering</p>        
+                  </div>
+              </div></center>
+            </div>
+            
+</center></div>
+
+
+ <p class="ex2">
+                
+<style>     .header1 {
+  padding: 5px;
+  text-align: center;
+  background:#D1947F;
+  color: white;
+  font-size: 10px;</style><body><br>
+        <div class="header1" id="team">
+  <h1>Centre Advisory Board</h1>
+ <!-- <p>My supercool header</p>-->
+</div>
+
+<div class="hoc container clear">
+          <div class="row">
+            <div class="column6" id="cab">
+              <div class="card">
+                <img src="images/demo/mg.png" alt="aj" style="width:100%">
+                <div class="container"><center>
+                  <p> Prof. Mark Goh</p> <p>Professor,
+Department of Decision Sciences School of Business,
+National University of Singapore, Singapore</p>          
+                  </div>
+              </div>
+          </div>
+            <div class="column6">
+              <div class="card"><img src="images/demo/gd.png" alt="ns" style="width:100%">
+                  <div class="container"><center>
+                    <p>Prof. S. G. Deshmukh
+</p><p>Professor, Department of Mechanical Engineering, 
+Indian Institute of Technology Delhi, India
+</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column6">
+              <div class="card"><img src="images/demo/sps.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p>Prof. Sarada Prasad Sarmah
+</p><p>Professor, Department of Industrial and Systems
+Engineering, Indian Institute of Technology Kharagpur,
+India.
+</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column6">
+              <div class="card"><img src="images/demo/jjt.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p>Prof. Jitesh J. Thakkar
+</p><p>Professor and Dean Academics
+School of Management and Leadership,
+National Rail and Transportation Institute, Vadodara, India
+</p>
+                  </div>
+              </div>
+            </div>
+           
+            
+</center></div>
+
+
+
+
+
+<div class="hoc container clear">
+          <div class="row">
+            <div class="column6">
+              <div class="card">
+                <img src="images/demo/ctsk.png" alt="aj" style="width:100%">
+                <div class="container"><center>
+                  <p>Dr. Sunil Kumar C.T.
+</p>           <p>General Manager (Engineering),
+Food Corporation of India Headquarters, India
+</p>
+                  </div>
+              </div>
+          </div>
+            <div class="column6">
+              <div class="card"><img src="images/demo/gj.png" alt="ns" style="width:100%">
+                  <div class="container"><center>
+                    <p>Shri. Girish Jambekar
+ </p><p>Factory Director, Hindustan Unilever Limited, Dadra And
+Nagar Haveli, India</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column6">
+              <div class="card"><img src="images/demo/vpp.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p>Dr. Venkata Prasad Palakiti
+</p><p>Regional Manager - Distribution Services
+Expeditors International (India) Pvt. Ltd, Hyderabad, India
+</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column6">
+              <div class="card"><img src="images/demo/ra.png" alt="ns" style="width:100%">
+                  <div class="container"><center>
+                    <p>Shri. Rushil Agarwal
+</p><p>Director (Sales), Intugine Technologies Pvt. Limited.,
+Bengaluru, India
+</p>
+                  </div>
+              </div>
+            </div>
+           
+            
+</center></div>
+
+</style><body><br>
+        <div class="header1" id="team">
+  <h1>SAMARTH</h1>
+ <p>(Student Ambassador for Multi-perspective Activities Related to logisTics and supply cHain)</p>
+</div>
+
+
+
+
+<div class="hoc container clear">
+          <div class="row">
+            <div class="column7">
+              <div class="card">
+                <img src="images/demo/1.png" alt="aj" style="width:100%">
+                <div class="container"><center>
+                  <p style="color: #5C5597">DEV GYAN PRIYADARSHI   
+</p>           <p>B201172ME
+</p>
+                  </div>
+              </div>
+          </div>
+            <div class="column7">
+              <div class="card"><img src="images/demo/2.png" alt="ns" style="width:100%">
+                  <div class="container"><center>
+                    <p style="color: #5C5597">RITIK CHATURVEDI
+ </p><p>B200468CH</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column7">
+              <div class="card"><img src="images/demo/3.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                    <p style="color: #5C5597">VANI AMRUTHA MUTYALA 
+</p><p>B201149ME</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column7">
+              <div class="card"><img src="images/demo/4.png" alt="ns" style="width:100%">
+                  <div class="container"><center>
+                    <p style="color: #5C5597">K M SATAKSHI SINGH 
+</p><p>B200370PE
+</p> 
+                  </div>
+              </div>
+            </div>
+           
+
+
+
+<div class="hoc container clear">
+          <div class="row">
+            <div class="column7">
+              <div class="card">
+                <img src="images/demo/5.png" alt="aj" style="width:100%">
+                <div class="container"><center>
+                  <p style="color: #5C5597">BAACHA <br>ADITHYA     
+</p>           <p>B200487CH
+</p>
+                  </div>
+              </div>
+          </div>
+            <div class="column7">
+              <div class="card"><img src="images/demo/6.png" alt="ns" style="width:100%">
+                  <div class="container"><center>
+                   <p style="color: #5C5597">ROJEN<br> BIJU
+ </p><p>M220486ME</p>
+                  </div>
+              </div>
+            </div>
+            <div class="column7">
+              <div class="card"><img src="images/demo/7.png" alt="ns" style="width:100%" class="round">
+                  <div class="container"><center>
+                   <p style="color: #5C5597">ASHWINI DADASAHEB KHANDAVE 
+</p><p>M220464ME
+</p>
+                  </div>
+              </div>
+            </div>
+           
+           
+
+            
+</center></div>
+
+
+
+
+
+
+
+
+
+</div></div></center></div></div></div></center></div></div></div></center></div></div></div></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <style>
+                                        * {
+                                          box-sizing: border-box;
+                                        }
+
+                                        /* Create three equal columns that floats next to each other */
+                                        .column {
+                                          float: left;
+                                          width: 33.33%;
+                                          padding: 10px;
+                                          height: 310px; /* Should be removed. Only for demonstration */
+                                          overflow: scroll;
+                                        }
+
+                                        /* Clear floats after the columns */
+                                        .row:after {
+                                          content: "";
+                                          display: table;
+                                          clear: both;
+                                        }
+
+                                        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+                                        @media screen and (max-width: 600px) {
+                                          .column {
+                                            width: 100%;
+                                          }
+                                        }
+                                        </style>
+                                        </head>
+                                        <body><div id="news">
+                                        <center>  
+
+                                        <h2 style="color: #D1947F"><b>News Feeds</h2></b></center></h2></center></div>
+                                        <div class="row">
+                                          <div class="column" style="background: linear-gradient(to bottom, #5c5597 0%, #d1947f 100%);">
+                                            <h2>#PMGatiShakti</h2>
+                                           <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dr. Sanjeev Ranjan, IAS, Secretary, MoPSW while attending the workshop on &#39;PM Gati Shakti &amp; National Logistics policy 2022 <a href="https://twitter.com/PortofChennai?ref_src=twsrc%5Etfw">@PortofChennai</a> said, &quot;The idea is to bring down the actual time taken by the containers going from the port to the ship&quot;.<a href="https://twitter.com/KamarajarPort?ref_src=twsrc%5Etfw">@KamarajarPort</a><a href="https://twitter.com/vocpa_tuticorin?ref_src=twsrc%5Etfw">@vocpa_tuticorin</a> <a href="https://t.co/vN5XrIsAAv">pic.twitter.com/vN5XrIsAAv</a></p>&mdash; Ministry of Ports, Shipping and Waterways (@shipmin_india) <a href="https://twitter.com/shipmin_india/status/1587699722055450624?ref_src=twsrc%5Etfw">November 2, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;We are improving the logistics sector in the country through <a href="https://twitter.com/hashtag/PMGatiShakti?src=hash&amp;ref_src=twsrc%5Etfw">#PMGatiShakti</a> NMP and National Logistics Policy&quot;: PM Shri Narendra Modi after laying foundation stone of C-295 Aircraft Manufacturing Facility in Vadodara, Gujarat. <a href="https://t.co/1TxDYEYoYq">pic.twitter.com/1TxDYEYoYq</a></p>&mdash; MORTHINDIA (@MORTHIndia) <a href="https://twitter.com/MORTHIndia/status/1586745400605622272?ref_src=twsrc%5Etfw">October 30, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">With over 1900 layers in <a href="https://twitter.com/hashtag/PMGatiShakti?src=hash&amp;ref_src=twsrc%5Etfw">#PMGatiShakti</a> National Master Plan, all Central Ministries and State Governments are now in mission mode to create multimodal and last mile connectivity <a href="https://twitter.com/PMOIndia?ref_src=twsrc%5Etfw">@PMOIndia</a> <a href="https://twitter.com/CimGOI?ref_src=twsrc%5Etfw">@CIMGoI</a> <a href="https://twitter.com/DPIITGoI?ref_src=twsrc%5Etfw">@DPIITGoI</a> <a href="https://t.co/fXf1XOo64Z">pic.twitter.com/fXf1XOo64Z</a></p>&mdash; @Logistics_MoCIGOV (@Logistics_MoCI) <a href="https://twitter.com/Logistics_MoCI/status/1585976258533285888?ref_src=twsrc%5Etfw">October 28, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+
+                                          </div>
+                                          <div class="column" style="background:linear-gradient(to top, #5c5597 0%, #d1947f 100%);" id="sm">
+                                            <h2>#NationalLogisticsPolicy</h2>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Spectacular Rise in Logistics Performance! 🇮🇳 <a href="https://t.co/Cszxz1HqLX">pic.twitter.com/Cszxz1HqLX</a></p>&mdash; Piyush Goyal (@PiyushGoyal) <a href="https://twitter.com/PiyushGoyal/status/1649731954777157632?ref_src=twsrc%5Etfw">April 22, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="koo-media" data-koo-permalink="https://embed.kooapp.com/embedKoo?kooId=3751c98b-03f1-487c-b4c2-89e6c4ded3a6" style="background:transparent;border: medium none;padding: 0;margin: 25px auto; max-width: 550px;"> <div style="padding: 5px;"><div style="background: #ffffff; box-shadow: 0 0 0 1.5pt #e8e8e3; border-radius: 12px; font-family: 'Roboto', arial, sans-serif; color: #424242 !important; overflow: hidden; position: relative; " > <a class="embedKoo-koocardheader" href="https://www.kooapp.com/dnld" data-link="https://embed.kooapp.com/embedKoo?kooId=3751c98b-03f1-487c-b4c2-89e6c4ded3a6" target="_blank" style=" background-color: #f2f2ef !important; padding: 6px; display: inline-block; border-bottom: 1.5pt solid #e8e8e3; justify-content: center; text-decoration:none;color:inherit !important;width: 100%;text-align: center;" >Koo App</a> <div style="padding: 10px"> <a target="_blank" style="text-decoration:none;color: inherit !important;" href="https://www.kooapp.com/koo/investindia/3751c98b-03f1-487c-b4c2-89e6c4ded3a6" >#InvestInIndia      #NewIndia aims to break into the top 10 countries in the world in Logistics Performance Index Ranking by 2030!      Know more: https://bit.ly/NLP_India      #InvestIndia #Logistics #NLP #NationalLogisticsPolicy</a> <div style="margin:15px 0"> <a style="text-decoration: none;color: inherit !important;" target="_blank" href="https://www.kooapp.com/koo/investindia/3751c98b-03f1-487c-b4c2-89e6c4ded3a6" > View attached media content </a> </div> - <a style="color: inherit !important;" target="_blank" href="https://www.kooapp.com/profile/investindia" >Invest India (@investindia)</a> 29 Oct 2022 </div> </div> </div> </blockquote><img style="display: none; height: 0; width: 0" src="https://embed.kooapp.com/dolon.png?id=3751c98b-03f1-487c-b4c2-89e6c4ded3a6"> <script src="https://embed.kooapp.com/embedLoader.js"></script>
+<br>
+
+                                           
+
+<a href="https://theprint.in/ani-press-releases/nities-centre-of-excellence-in-logistics-and-supply-chain-management-to-buttress-indias-vision-for-economic-growth/744886/">NITIE’s Centre of Excellence in Logistics and Supply Chain Management to buttress India’s Vision for Economic Growth.
+  <br><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Launch of National Logistics Policy by Hon&#39;ble PM Shri Narendra Modi Ji <a href="https://twitter.com/hashtag/NationalLogisticsPolicy?src=hash&amp;ref_src=twsrc%5Etfw">#NationalLogisticsPolicy</a> <a href="https://t.co/Y1YkAMpM1K">https://t.co/Y1YkAMpM1K</a></p>&mdash; Nitin Gadkari (@nitin_gadkari) <a href="https://twitter.com/nitin_gadkari/status/1571113086312124418?ref_src=twsrc%5Etfw">September 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+                                          </div>
+                                          <div class="column" style="background:linear-gradient(to right, #5c5597 0%, #d1947f 100%);" id="objectives">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VocGGxdaND4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                           
+
+
+                                          </div>
+                                        </div>
+
+
+
+
+
+
+
+<!--<center>
+
+<h2 style="color: #D1947F"><b>News Feeds</h2></b></h2></center></div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
+<div class="header1" id="coc">
+  <h1>Courses offered by the Centre</h1>
+ <!-- <p>My supercool header</p>-->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    /* CSS styling */
+    .semester-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .course-card {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #5c5597;
+      color: #fff;
+    }
+    
+    .course-code {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .course-name {
+      margin-bottom: 5px;
+    }
+    
+    .faculty-name {
+      font-style: italic;
+      color: #d1947f;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center>
+<h3 style="color:#5c5597"><u>Courses offered during Winter Semester 2022-23
+(January 2023 - May 2023)</center></u>
+
+
+<div class="semester-container">
+    <div class="course-card">
+      <h4 class="course-code">ME3126D SUPPLY CHAIN MANAGEMENT (An open elective/ department elective by MED)</h4>
+      <p class="course-name">Faculty: Dr. Vinay V. Panicker</p>
+      <p class="faculty-name">email: vinay@nitc.ac.in <br>
+Slot: H</p>
+    </div>
+    
+    <div class="course-card">
+      <h4 class="course-code">LS4001D SUPPLY CHAIN OPERATION SIMULATION</h4>
+      <p class="course-name">Faculty: Prof. V. Madhusudanan Pillai</p>
+      <p class="faculty-name">email: vmp@nitc.ac.in<br>
+Slot: H</p>
+    </div>
+    
+    <div class="course-card">
+      <h4 class="course-code">GS3008D MULTIMODAL TRANSPORTATION SYSTEMS</h4>
+      <p class="course-name">Faculty: Prof. M.V. L.R. Anjaneyulu</p>
+      <p class="faculty-name">email: mvlr@nitc.ac.in <br>
+Slot: H
+</p>
+    </div>
+    
+    <div class="course-card">
+      <h4 class="course-code">GS3002D PORT MANAGEMENT</h4>
+      <p class="course-name">Faculty: Dr. Yogeshwar V Navandar</p>
+      <p class="faculty-name">email: navandar@nitc.ac.in <br>
+Slot: G
+</p>
+    </div>
+    
+    <div class="course-card">
+      <h4 class="course-code"> CE3036D TRANSPORTATION PLANNING (An open elective/ department elective by CED)</h4>
+      <p class="course-name">Faculty: Dr. Harikrishna M.</p>
+      <p class="faculty-name">email: harikrishna@nitc.ac.in <br>
+Slot: F
+</p>
+    </div>
+    
+  
+  </div>
+
+
+
+<br><br>
+
+
+
+
+
+
+<center>
+<h3 style="color:#5c5597"><u>Courses to be offered during Monsoon Semester 2023
+(August 2023 – December 2023)</center></u>
+
+
+<div class="semester-container">
+    <div class="course-card">
+      <h4 class="course-code">GS3001D WAREHOUSE AUTOMATION</h4>
+      <p class="course-name">Faculty: Dr. Pradeepmon T.G.</p>
+      <p class="faculty-name">email: pradeeptg@nitc.ac.in
+Slot: G <br>
+</p>
+    </div>
+    
+    <div class="course-card">
+      <h4 class="course-code">LS4001D SUPPLY CHAIN OPERATION SIMULATION</h4>
+      <p class="course-name">Faculty: Prof. V. Madhusudanan Pillai</p>
+      <p class="faculty-name">email: vmp@nitc.ac.in<br>
+Slot: F</p>
+    </div>
+    
+    <div class="course-card">
+      <h4 class="course-code">GS3004D HEALTH CARE SUPPLY CHAIN</h4>
+      <p class="course-name">Faculty: Prof. R. Sridharan</p>
+      <p class="faculty-name">email: sreedhar@nitc.ac.in <br>
+Slot: F
+</p>
+    </div>
+    
+    <div class="course-card">
+      <h4 class="course-code">GS3005D HUMANITARIAN LOGISTICS</h4>
+      <p class="course-name">Faculty: Dr. Devendra K. Yadav</p>
+      <p class="faculty-name">email: devendrak@nitc.ac.in <br>
+Slot: G
+
+</p>
+    </div>
+    
+    <div class="course-card">
+      <h4 class="course-code"> GS3002D PORT MANAGEMENT</h4>
+      <p class="course-name">Faculty: Dr. Yogeshwar V Navandar</p>
+      <p class="faculty-name"> navandar@nitc.ac.in <br>
+Slot: G
+</p>
+    </div>
+    
+  <div class="course-card">
+      <h4 class="course-code">GS3008D MULTIMODAL TRANSPORTATION SYSTEMS</h4>
+      <p class="course-name">Faculty: Dr. Vinay V. Panicker</p>
+      <p class="faculty-name"> vinay@nitc.ac.in <br>
+Slot: H
+</p>
+    </div>
+
+    <div class="course-card">
+      <h4 class="course-code"> GS4001D TRANSPORTATION SYSTEMS AND NETWORK DESIGN</h4>
+      <p class="course-name">Faculty:  Dr. Harikrishna M.</p>
+      <p class="faculty-name">harikrishna@nitc.ac.in <br>
+Slot: F
+</p>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="header1" id="eoc">
+  <h1>Events organized by the Centre</h1></div>
+
+<!-- palott  -->
+
+
+<body>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.event {
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.event:hover {
+  transform: scale(1.05);
+}
+
+.event h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.event-date {
+  font-weight: bold;
+  color: #555;
+}
+
+.event-location {
+  font-style: italic;
+  color: #777;
+}
+
+.event-description {
+  margin-top: 10px;
+  color: #444;
+}
+
+.event-button {
+  background-color: #5c5597;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-button:hover {
+  background-color: #d1947f;
+}
+
+.event-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  display: none;
+}
+
+.event.active .event-image {
+  display: block;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+</style>
+<!-- latest 2 events showing -->
+<div id="content" onmouseover="showImage()" onmouseout="hideImage()">
+ <div class="event">
+      <h3>Short Term Training Programme (STTP)</h3>
+      <p class="event-date">Date: July 24 - July 29, 2023</p>
+      <!--<p class="event-location">Location: City Hall</p>-->
+      <p class="event-description">online Short Term Training Programme (STTP) on “Smart Mobility and Research Trends (SMART 2023)". Dr. Munavar Fairooz C. and Dr. Sreekanth V.K. coordinated the STTP from July 24 to 29, 2023. Dr Munavar Fairooz C, Dr. Nishant Mukund Pawar and Dr. Resmi S.R. coordinated this STTP. </p>
+      <!--<button class="event-button" onclick="showImage()">Register</button>
+      <img  id="myImage" src="images\bg\bb9.png" alt="a">-->
+
+ <!--palott-->
+      </div>
+<img id="myImage" src="" alt="Image" style="display: none;">
+
+
+
+
+    </div>
+
+    <div class="event">
+      <h3>Short Term Training Programme (STTP)</h3>
+      <p class="event-date">Date: July 17 - July 21, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description">online Short Term Training Programme (STTP) on “Recent Advances in Freight Transportation" from July 17 to 21, 2023. Dr Munavar Fairooz C, Dr. Nishant Mukund Pawar and Dr. Resmi S.R. coordinated this STTP</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="images\bg\nit3.jpg" alt="Event 2 Image">
+    </div>
+
+<style type="text/css">
+
+
+
+
+
+  .popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+#show-popup-btn {
+  background-color:  #5c5597;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#show-more-btn:hover {
+  background-color: #45a049;
+}</style><center>
+
+
+<button id="show-popup-btn">Show More Events</button>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>Activities conducted by CoELSCM
+</h2>
+     <div class="event">
+      <h3>Launch of Centre of Excellence in Logistics and Supply Chain Management. 
+</h3>
+      <p class="event-date">Date: September 19, 2022</p>
+      <!--<p class="event-location">Location: City Hall</p>-->
+      <p class="event-description">National Institute of Technology Calicut (NIT Calicut) is partnering with NITIE Mumbai to support the Logistics Human Resource Development and Capacity Building under the PM Gati Shakti Scheme - a Govt. of India Initiative through the Centre of Excellence in Logistics and Supply Chain Management (CoELSCM). The focus of this Centre is to contribute towards the realization of the objectives of the PM Gati Shakti scheme.
+</p>
+     <!-- <button class="event-button" onclick="showImage()">Register</button>
+      <img id="myImage" class="event-image" src="images\bg\bb9.png" alt=" image - Launch of Centre of Excellence in Logistics and Supply Chain Management. ">-->
+    </div>
+
+  
+
+     <div class="event">
+      <h3>Faculty Development Programme (FDP) titled "Digital Supply Chain Management" </h3>
+      <p class="event-date">Date: September 19 - September 30, 2022</p>
+      <!--<p class="event-location">Location: City Hall</p>-->
+      <p class="event-description">two week-long AICTE Training and Learning Academy (ATAL) sponsored Faculty Development Programme (FDP) titled "Digital Supply Chain Management” from September 19 - 30, 2022. The programme was inaugurated by Prof. P.S. Sathidevi, Deputy Director NIT Calicut. Out of 50 registered participants, 33 participants successfully completed the course by satisfying the criteria of ATAL Academy by securing more than 70% for assessments and 80% attendance. Prof. V. Madhusudanan Pillai and Dr.Hiran V Nath were the Coordinators of this FDP.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event1.jpg" alt="Event 1 Image">
+    </div>
+
+ <div class="event">
+      <h3>Online meeting on Capacity Building for PM GatiShakti Master Plan</h3>
+      <p class="event-date">Date: January 10, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description">Prof. Prasad Krishna, Hon. Director, NITC and Members of the Centre attended an Online meeting on Capacity Building for PM GatiShakti Master Plan under the Chairmanship of Shri. K Sanjay Murthy, Secretary, Higher Education, Ministry of Education, Govt. of India, held on January 10, 2023 at 3.00 PM in the Institute Board Room.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+    <div class="event">
+      <h3>Webinar series on “National Logistics Policy: Shaping Indian Logistics for improving Competitiveness”</h3>
+      <p class="event-date">Date: January 19, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description">Episode 1 of this Webinar series was held on January 19, 2023, on the topic “Opportunities and Challenges of Rail Freight Operations in India”. The resource person for the first episode of the Webinar Series was Shri. Siva R., Deputy Chief Operations Manager Freight, Southern Railways. During the session, Shri. Siva presented the trends in Rail freight over the years and the reforms in the freight sector undertaken by Indian Railways. The details of the National Rail Plan 2030 and the initiatives of Indian Railways to reduce the transport cost were also enunciated. He also described the current status of the Indian Infrastructure projects and major proposals for the PM Gati Shakti scheme such as Dedicated Freight Corridors and Gati Shakti Terminals. Shri. Siva concluded the session by highlighting the various challenges for Indian Railways in increasing the train length and wagon capacity. The Webinar was attended by more than 120 participants including Faculty members, Undergraduate and Postgraduate students, Doctoral scholars across the country.
+
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+     <div class="event">
+      <h3>JAITRA (Joint Academic Initiative Towards Remarkable Achievements)</h3>
+      <p class="event-date">Date: February 14, 2023</p>
+      <!--<p class="event-location">Location: City Hall</p>-->
+      <p class="event-description">Team@CoELSCM led by Prof. Prasad Krishna, Director NIT Calicut had an Online Discussion with a Team @Adani Group for a possible Academia Industry Research Collaboration of the Centre titled JAITRA (Joint Academic Initiative Towards Remarkable Achievements) on February 14, 2023, at 4.30 pm in the Boardroom of NIT Calicut. 
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event1.jpg" alt="Event 1 Image">
+    </div>
+
+    <div class="event">
+      <h3>SAMARTH (Student Ambassador for Multi-perspective Activities Related to logisTics and supply cHain).</h3>
+      <p class="event-date">Date: February 14, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description">Induction Ceremony of Student Ambassadors for the Centre of Excellence in Logistics and Supply Chain Management. The Centre of Excellence in Logistics and Supply Chain Management (CoELSCM) has appointed Seven Students of the National Institute of Technology Calicut as Student Ambassadors of the Centre. The Student Ambassadors of the CoELSCM are designated as SAMARTH (Student Ambassador for Multi-perspective Activities Related to logisTics and supply cHain). The induction of SAMARTHs was held on February 14, 2023, at 5.30 pm in the Boardroom of NIT Calicut in the presence of the Hon. Director, Prof. Prasad Krishna. Dev Gyan Priyadarshi and Vani Amrutha Mutyala of Sixth Semester B.Tech. Mechanical Engineering, Ritik Chaturvedi and Baacha Adithya of Sixth Semester B.Tech. Chemical Engineering, Satakshi Singh of Sixth Semester B.Tech. Production Engineering, Rojen Biju and Ashwini Dadasaheb Khandave of M.Tech. Industrial Engineering and Management got selected as SAMARTHs. Dr Vinay V. Panicker, Chairperson of CoELSCM, Prof. Jose Mathew, Prof. R. Sridharan, Prof. V.Madhusudanan Pillai, Prof. Anjaneyulu M.V.L.R., Prof. T. Radha Ramanan, and other members of the Centre were also present during the function. The SAMARTHs will act as student volunteers for the various activities organised by the Centre. 
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+     <div class="event">
+      <h3>Online Faculty Development Programme (FDP) titled “Decision Modelling in Transportation and Logistics Industry” </h3>
+      <p class="event-date">Date: February 27 - March 03, 2023</p>
+      <!--<p class="event-location">Location: City Hall</p>-->
+      <p class="event-description">The Centre of Excellence in Logistics and Supply Chain Management organized a week-long AICTE Training and Learning Academy (ATAL) sponsored Online Faculty Development Programme (FDP) titled “Decision Modelling in Transportation and Logistics Industry” from February 27 to March 03, 2023. The programme was inaugurated by Prof. Manoj K. Tiwari, Director NITIE Mumbai. Prof. Prasad Krishna, Director, NIT Calicut presided over the inaugural function. Out of 138 registered participants, 77 participants successfully completed the course by satisfying the criteria of ATAL Academy by securing more than 70% for assessments and 80% attendance. Dr. Vinay V. Panicker and Dr.Harikrishna M. were the Coordinators of this FDP.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event1.jpg" alt="Event 1 Image">
+    </div>
+
+    <div class="event">
+      <h3>Online Certification Course on “Port Development, Operations and Management”</h3>
+      <p class="event-date">Date: March 05 - April 22, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description">The Centre of Excellence in Logistics and Supply Chain Management organized a 30-hour long Online Certification Course on “Port Development, Operations and Management” between March 5th to April 22nd, 2023. The Course instructors are Shri. Rajesh Menon, Associate Director and Maritime Expert, DPIIT logistics division, Ministry of Commerce & Industry and Technical Support unit, PM Gati Shakti, Ministry of Port, Shipping and Waterways, Govt. Of India, Shri. S V Madabhavi, Director, Vadhavan Port Project Ltd. and Former Chief Manager (PPSD), Jawaharlal Nehru Port Trust, Dr Unnikrishnan Nair, Head, Maritime Logistics - Logistics Sector Skill Council Former Chief Manager (Operations) JNPT, Mumbai, Cdr (Dr.) Shamasundara M S, Registrar NIT Calicut and Prof. M.V.L.R. Anjaneyulu, NIT Calicut. About 77 registered participants are attending this course. Dr.Yogeshwar Vijaykumar Navandar, Dr. Nishant Mukund Pawar and Dr. Vinay V. Panicker were the Coordinators of this Online Certification Course.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+     <div class="event">
+      <h3>Webinar series on “National Logistics Policy: Shaping Indian Logistics for improving Competitiveness”</h3>
+      <p class="event-date">Date: March 05, 2023</p>
+      <!--<p class="event-location">Location: City Hall</p>-->
+      <p class="event-description">Episode 2 of this Webinar series was held on March 05, 2023, at 11:00 AM on the topic “National Logistics Policy: Opportunities in Maritime sector”. The resource person for the Second episode of the Webinar Series was Mr. Rajesh Menon, Maritime Expert, Technical Support Unit, PM Gati Shakti, Ministry of Port Shipping and Waterways, Govt. of India. During the session, Mr. Rajesh Menon talked about India's requirement for a National Logistics Policy to create a cost-effective and efficient logistics ecosystem. The target is to decrease logistics costs and enhance performance by 2030. Furthermore, he discussed the potential in the maritime sector and the necessity for an integrated maritime logistics system. The presentation covered the growth of coastal traffic in the Indian maritime sector and the importance of multimodality and intermodal operations. Additionally, several plans, policies, and initiatives implemented by the Indian government to improve the logistics ecosystem and the maritime sector's effectiveness was also discussed. The Webinar was attended by 78 participants including Faculty members, Undergraduate and Postgraduate students, Doctoral scholars across the country.
+ </p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event1.jpg" alt="Event 1 Image">
+    </div>
+
+    <div class="event">
+      <h3>Webinar series on “National Logistics Policy: Shaping Indian Logistics for improving Competitiveness”.</h3>
+      <p class="event-date">Date: March 05, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description">Episode 3 of this Webinar series was held on March 05, 2023, at 2:30 PM on the topic “Introduction to Gati Shakti”. The resource person for the third episode of the Webinar Series was Mr. Rajesh Menon Maritime Expert, Technical Support Unit, PM Gati Shakti, Ministry of Port Shipping and Waterways, Govt. of India. During the session, Mr. Rajesh Menon presented the PM Gati Shakti program launched by the Indian government for infrastructure development. The program aims to create a national logistics policy for an efficient and cost-effective logistics ecosystem, with targets of reducing logistics costs and improving logistics performance by 2030. The program is based on six pillars, including project planning, monitoring, optimization, synchronization, analytical decisions, and interdepartmental coordination. He also highlighted the need for a National Master Plan for infrastructure development, a GIS-based digital platform for better visibility and decision-making support. The existing transportation infrastructure and various schemes for transportation infrastructure in India were also discussed. The Webinar was attended by 75 participants including Faculty members, Undergraduate and Postgraduate students, Doctoral scholars across the country.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+     <div class="event">
+      <h3>Online Faculty Development Programme (FDP) titled “Strategic Management in Rail and Road Transportation System” </h3>
+      <p class="event-date">Date: March 06 - March 10, 2023</p>
+      <!--<p class="event-location">Location: City Hall</p>-->
+      <p class="event-description">The Centre of Excellence in Logistics and Supply Chain Management organized a week-long AICTE Training and Learning Academy (ATAL) sponsored Online Faculty Development Programme (FDP) titled “Strategic Management in Rail and Road Transportation System” from March 06 to March 10, 2023. The programme was inaugurated by Prof. G. Raghuram, Former Principal Academic Advisor, Gati Shakti Vishwavidyalaya, Former Director IIM Bangalore, Retd. Professor at IIM Ahmedabad. Prof. Prasad Krishna, Director, NIT Calicut presided over the inaugural function. Out of 99 registered participants, 52 participants successfully completed the course by satisfying the criteria of ATAL Academy by securing more than 70% for assessments and 80% attendance. Dr.Harikrishna M. and Dr. Vinay V. Panicker were the Coordinators of this FDP.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event1.jpg" alt="Event 1 Image">
+    </div>
+
+    <div class="event">
+      <h3>Webinar series on “National Logistics Policy: Shaping Indian Logistics for improving Competitiveness”</h3>
+      <p class="event-date">Date: March 09, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description">Episode 4 of this Webinar series was held on March 09, 2023, at 11:00 AM on the topic “Port Management: Port Operations, Importance and role of the Port sector – Challenges faced by Port Management”. The resource person for the fourth episode of the Webinar Series was Dr. C. Unnikrishnan Nair Head, Maritime Logistics - Logistics Sector Skill Council Former Chief Manager (Operations), JNPT, Mumbai. During the session, Dr. C. Unnikrishnan Nair presented the Evolution, Infrastructure, Operations, Importance and role of Port and Challenges faced by Port Management. He also discussed the importance and role of the port sector and related employment. The Webinar was attended by 68 participants including Faculty members, Undergraduate and Postgraduate students, Doctoral scholars across the country.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+     <div class="event">
+      <h3>Webinar series on “National Logistics Policy: Shaping Indian Logistics for improving Competitiveness”</h3>
+      <p class="event-date">Date: March 09, 2023</p>
+      <!--<p class="event-location">Location: City Hall</p>-->
+      <p class="event-description">Episode 5 of this Webinar series was held on March 09, 2023, at 02:30 PM on the topic “Port Performance Evaluation and Benchmarking”. The resource person for the fifth episode of the Webinar Series was Dr. C. Unnikrishnan Nair Head, Maritime Logistics - Logistics Sector Skill Council Former Chief Manager (Operations), JNPT, Mumbai. During the session, Dr. C. Unnikrishnan Nair presented the concept of benchmarking and performance evaluation in port operations, with a focus on parameters such as berth productivity, pre-berth detention time, turn-round time, berth occupancy, fuel consumption, and the number of berths in a port. He also discussed the factors affecting productivity and methods to improve it and various smart port facilities were also discussed. The Webinar was attended by 74 participants including Faculty members, Undergraduate and Postgraduate students, Doctoral scholars across the country
+
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event1.jpg" alt="Event 1 Image">
+    </div>
+
+    <div class="event">
+      <h3> Webinar series on “National Logistics Policy: Shaping Indian Logistics for improving Competitiveness”.</h3>
+      <p class="event-date">Date: March 17, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description"> Episode 6 of this Webinar series was held on March 17, 2023, at 10:00 AM on the topic “Development of Ports & Shipping in India”. The resource person for the sixth episode of the Webinar Series was Dr S V Madabhavi Director, Vadhavan Port Project Ltd. During the session, Dr S V Madabhavi discussed the history and development of ports in India, starting from ancient times when maritime trade was thriving in the region. He mentions some of the prominent ports from different eras, including Lothal, Bharuch, Muziris, Calicut, Poompuhar, and Mumbai. It also covers the development of ports under British rule, and the changes that have occurred in recent times with modernization, globalization, and urbanization. Finally, he also discusses how Mumbai Port is repositioning itself towards cruise tourism and water transport activities in line with other major international ports. The Webinar was attended by 69 participants including Faculty members, Undergraduate and Postgraduate students, Doctoral scholars across the country.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+     <div class="event">
+      <h3>Webinar series on “National Logistics Policy: Shaping Indian Logistics for improving Competitiveness”</h3>
+      <p class="event-date">Date: March 17, 2023</p>
+      <!--<p class="event-location">Location: City Hall</p>-->
+      <p class="event-description">Episode 7 of this Webinar series was held on March 17, 2023, at 11:30 AM on the topic “Container Traffic & Logistics Cost”. The resource person for the seventh episode of the Webinar Series was Dr S V Madabhavi Director, Vadhavan Port Project Ltd. During the session, Dr S V Madabhavi provides an analysis of container traffic and logistic costs for Indian ports. He also provides projections for future container trade growth rates for different regions in India, assuming various scenarios from pessimistic to optimistic, with moderate growth considered despite the constraints. Also, a case study related to Logistic Cost Comparison was discussed. The Webinar was attended by 73 participants including Faculty members, Undergraduate and Postgraduate students, Doctoral scholars across the country.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event1.jpg" alt="Event 1 Image">
+    </div>
+
+    <div class="event">
+      <h3>Webinar series on “National Logistics Policy: Shaping Indian Logistics for improving Competitiveness”</h3>
+      <p class="event-date">Date: March 18, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description"> Episode 8 of this Webinar series was held on March 18, 2023, at 10:00 AM on the topic “Port Planning and Engineering”. The resource person for the eighth episode of the Webinar Series was Dr S V Madabhavi Director, Vadhavan Port Project Ltd. During the session, Dr S V Madabhavi talks about about port planning and engineering. Classification of different types of ports and harbour is also discussed. Additionally, he also discussed the types of berth structures and the different types of cargo that they can handle. Finally, he describes the various types of structures that can be used for different types of ports and berths. The Webinar was attended by 71 participants including Faculty members, Undergraduate and Postgraduate students, Doctoral scholars across the country.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+<div class="event">
+      <h3>Webinar series on “National Logistics Policy: Shaping Indian Logistics for improving Competitiveness”</h3>
+      <p class="event-date">Date: March 18, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description"> Episode 9 of this Webinar series was held on March 18, 2023, at 02:30 PM on the topic “Environmental Process for Port Project”. The resource person for the tenth episode of the Webinar Series was Dr S V Madabhavi Director, Vadhavan Port Project Ltd. During the session, Dr S V Madabhavi talks about about Ports Infrastructure and Environmental Clearance Process. He also talks about the importance of port projects, their impact on the environment, and the need for incorporating environmental safeguards at the planning stage. He also mentions the EIA Notification 2006 and CRZ Notification 2019 as the regulations that port projects mainly attract and discusses the significance of the Sethusamudram Ship Channel Project and the litigation surrounding it. The Webinar was attended by 66 participants including Faculty members, Undergraduate and Postgraduate students, Doctoral scholars across the country.
+
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+    <div class="event">
+      <h3>Webinar series on “National Logistics Policy: Shaping Indian Logistics for improving Competitiveness”</h3>
+      <p class="event-date">Date: March 25, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description">  Episode 11 of this Webinar series was held on March 25, 2023, from 2.30 to 4.30 PM on the topic “Green Shipping”. The resource person for the twelfth episode of the Webinar Series was Mr. Rajesh Menon Maritime Expert, Technical Support Unit, PM Gati Shakti, Ministry of Port Shipping and Waterways, Govt. of India. During the session Mr. Rajesh Menon talks about Green Shipping in detail. He also discusses the Conservation and International Mandates (MARPOL) and Policy Innervations for Green Shipping. The Webinar was attended by 58 participants including Faculty members, Undergraduate and Postgraduate students, Doctoral scholars across the country.
+
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+    <div class="event">
+      <h3>Webinar series on “National Logistics Policy: Shaping Indian Logistics for improving Competitiveness”</h3>
+      <p class="event-date">Date: March 26, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description"> Episode 12 of this Webinar series was held on March 26, 2023, from 10.30 AM to 12.30 PM on the topic “Port Performance Evaluation and Benchmarking”. The resource person for the thirteenth episode of the Webinar Series was Mr. Rajesh Menon Maritime Expert, Technical Support Unit, PM Gati Shakti, Ministry of Port Shipping and Waterways, Govt. of India. He discussed various topics related to ship movement from Anchorage to Berth, including issues that need to be handled, terminal efficiency, equipment management, berth occupancy, turnaround time, Inter carting and storage, cargo evacuation, operating cost evaluation, EBITA calculation, and operations contract. The discussion covered important aspects of managing ship operations, from ensuring efficient terminal operations to evaluating the profitability of commodities through EBITA calculation. The Webinar was attended by 69 participants including Faculty members, Undergraduate and Postgraduate students, Doctoral scholars across the country.
+
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+    <div class="event">
+      <h3>Webinar series on “National Logistics Policy: Shaping Indian Logistics for improving Competitiveness”</h3>
+      <p class="event-date">Date: March 26, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description">Episode 13 of this Webinar series was held on March 26, 2023, from 2.30 to 4.30 PM on the topic "Economic Evaluation of Minor Port Development - A Case Study". The resource person for the fourteenth episode of the Webinar Series was Dr. M. V. L. R. Anjaneyulu, Professor & Head, Centre for Transportation Research (CTR), NIT Calicut. He discussed various topics related to economic evaluation of minor port development with a case study of Bypore port, traffic demand estimation and traffic operations. The discussion covered important aspects of economic evaluation using different methods such as cost/benefit ratio, internal rate of return etc. The Webinar was attended by 69 participants including Faculty members, Undergraduate and Postgraduate students, Doctoral scholars across the country.
+
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+    <div class="event">
+      <h3>Short Term Online Certification Course on “Warehouse Automation” </h3>
+      <p class="event-date">Date: May 15 - May 27, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description">The Centre of Excellence in Logistics and Supply Chain Management conducted a 30-hour long Short Term Online Certification Course on “Warehouse Automation” from May 15 - 27, 2023. Dr. Pradeepmon T. G., Dr. Ratna Kumar K., and Dr. Vinay V. Panicker coordinated this Online Certification Course. Ninety two participants successfully completed the certification course. External Resource persons for the course were Dr Venkata Prasad Palakiti, Regional Manager – Distribution Services, Expeditors; Mr. Mohit Gupta, Manager - Centre of Excellence, Hindustan Unilever Ltd., Mr. Kaushal Pandya, Asst. Manager - Centre of Excellence, Hindustan Unilever Ltd., Mr. Vijay Sendhil IT Architect - Logistics Execution, Neovia Logistics, Dr Rakesh V. Assistant Professor, IIM, Lucknow, Mr. Rony Michael, Director, RM Education Academy, and Mr. Mayuresh Jahagirdar, Solutions Engineer, Grey Orange Pvt Ltd.
+
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+
+    <div class="event">
+      <h3>Online Certificate Course on “Logistics and Supply Chain Management”</h3>
+      <p class="event-date">Date:June 12 - July 21, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description"> The Centre of Excellence in Logistics and Supply Chain Management organised a Six week Online Certificate Course on “Logistics and Supply Chain Management” from June 12 - July 21, 2023. Dr. Pradeepmon T. G. and Dr. Vinay V. Panicker coordinated this Online Certification Course. Out of 22 participants, 7 were industrial participants sponsored by Godrej & Boyce Mfg. Co. Ltd. Mumbai, and the rest were students and career enthusiasts. Based on the assessments and a preliminary screening, two career enthusiasts were selected for a month-long Internship at Blue Dart Aviation Limited Bengaluru from September 18 - October 17, 2023.    
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+
+    <div class="event">
+      <h3>Online Skill Development Workshop on "Disaster Responsive Humanitarian Logistics (DREHL) 2023"</h3>
+      <p class="event-date">Date: June 29 - July 03, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description"> The Centre of Excellence in Logistics and Supply Chain Management conducted a Five-day Online Skill Development Workshop on "Disaster Responsive Humanitarian Logistics (DREHL) 2023" from June 29 to July 03, 2023. Dr.Sanil Kumar, Dr. Bimal P., and Dr. Devendra K. Yadav were the coordinators for this skill development event. 
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+
+    <div class="event">
+      <h3>Short Term Online Training Programme on “Applications of Multi-Criteria Decision Making Methods in Logistics and Transportation Engineering (MMLT2023)” </h3>
+      <p class="event-date">Date: July 10 - July 15, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description">  The Centre of Excellence in Logistics and Supply Chain Management organised a Short Term Online Training Programme on “Applications of Multi-Criteria Decision Making Methods in Logistics and Transportation Engineering (MMLT2023)” from July 10 - 15, 2023. Dr.Yogeshwar Vijaykumar Navandar and Dr. Sajan T. John coordinated this Short Term Online Training Programme.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+
+    <div class="event">
+      <h3>Short Term Online Course on “Digital Supply Chain Management”</h3>
+      <p class="event-date">Date: July 17 - July 21, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description"> he Centre of Excellence in Logistics and Supply Chain Management organised a Short Term Online Course on “Digital Supply Chain Management” from June 26 - 30, 2023. Dr. Gopakumar G., Dr. Sajan T. John and Prof. V. Madhusudanan Pillai coordinated this Short Term Online Course. 
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+
+    <div class="event">
+      <h3>Student Internship Programme titled Practical, Research-driven, Advanced Gati Shakti Aligned Technology Internship, PRAGATI</h3>
+      <p class="event-date">Date: May 15 - July 15, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description"> The Centre of Excellence in Logistics and Supply Chain Management offers a Student Internship Programme titled Practical, Research-driven, Advanced Gati Shakti Aligned Technology Internship, PRAGATI. Dr. Pradeepmon T. G., Dr Munavar Fairooz C, and Dr. Sreekanth V. K. coordinated Student Internship Programme. 
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+
+    <div class="event">
+      <h3>online Short Term Training Programme (STTP) on “Recent Advances in Freight Transportation” </h3>
+      <p class="event-date">Date: July 17 - July 21, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description">The Centre of Excellence in Logistics and Supply Chain Management organised a week online Short Term Training Programme (STTP) on “Recent Advances in Freight Transportation” from July 17 to 21, 2023. Dr Munavar Fairooz C, Dr. Nishant Mukund Pawar and Dr. Resmi S.R. coordinated this STTP.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+    <div class="event">
+      <h3>Online Short Term Training Programme (STTP) on “Smart Mobility and Research Trends (SMART 2023)”</h3>
+      <p class="event-date">Date: July 24 - July 29, 2023</p>
+     <!-- <p class="event-location">Location: Convention Center</p>-->
+      <p class="event-description"> The Centre of Excellence in Logistics and Supply Chain Management organised a week online Short Term Training Programme (STTP) on “Smart Mobility and Research Trends (SMART 2023)”. Dr. Munavar Fairooz C. and Dr. Sreekanth V.K. coordinated the STTP from July 24 to 29, 2023. Dr Munavar Fairooz C, Dr. Nishant Mukund Pawar and Dr. Resmi S.R. coordinated this STTP.
+</p>
+      <!--<button class="event-button">Register</button>-->
+      <img class="event-image" src="event2.jpg" alt="Event 2 Image">
+    </div>
+
+
+    
+
+
+
+  </div>
+</div>
+
+
+  <!--<button onclick="window.location.href = 'newpage.html';" id="show-more-btn";>Show More Events</button> <br>-->
+</center>
+
+
+</body>
+
+  <div  style="background-image:url('images/bg/bb3.jpg');" id="contact">
+    <center>
+        <footer id="footer" class="hoc clear"> 
+      <!--  <image src="images/demo/logo.png"> -->
+          <h1 style="color:#5c5597">COE LSCM</h1><!--#D1947F-->
+    <h3 class="onequarter" style="color:#5C5597">CENTRE OF EXCELLENCE IN
+LOGISTICS AND SUPPLY CHAIN MANAGEMENT,
+   NIT Calicut, NIT Campus Post, CALICUT 673 601, Kerala <br>coelscm@nitc.ac.in</h3>          
+              <hr class="btmspace-50">
+
+            <div class="row">
+    <div class="column4">
+      
+       
+         </div> <div class="row">
+  
+      
+    </footer>
+  </div>
+
+
+
+
+<script>
+
+
+
+
+  
+
+
+
+
+  function openPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+document.getElementById("show-popup-btn").addEventListener("click", openPopup);
+
+
+
+
+
+
+
+
+
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
